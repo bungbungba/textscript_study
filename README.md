@@ -1,1 +1,1 @@
-# textscript_study
+# typescript_study
