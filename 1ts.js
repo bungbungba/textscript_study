@@ -63,30 +63,3 @@ list[1] = 100;
 console.log(list[0]);
 console.log(list[1]);
 console.log(list[2]);
-//void
-function warnUser() {
-    console.log("This is my warning message");
-}
-warnUser();
-//Null & Undefined
-var u = undefined;
-var n = null;
-console.log(u);
-console.log(n);
-//never
-function error(message) {
-    throw new Error(message);
-} //never는 도달할 수 없는 끝 점을 가져야 한다.
-function fail() {
-    return error("Something failed");
-} //리턴 타입이 never로 추정됨
-function infiniteLoop() {
-    while (true) {
-    }
-} //never는 도달할 수 없는 끝 점을 가져야 한다.
-//type assertions
-var someValue = "this is a string";
-var strLength1 = someValue.length;
-var strLength2 = someValue.length;
-console.log(strLength1);
-console.log(strLength2);
